@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&family=Bebas+Neue&family=Bree+Serif&family=Bungee&family=Calistoga&family=Lexend&family=Poppins&family=Press+Start+2P&family=Secular+One&family=Shrikhand&display=swap');
+
+:root{
+    --color-dark: rgb(14,14,14);
+    --color-dark2: rgb(32,32,32);
+    --color-dark3: rgb(36, 36, 36);
+    --color-white: #fff;
+    --color-green: rgb(103,195,80);
+    --color-green2: rgb(51,149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146,22, 17);
+
+    --color-brown: rgb(156, 19, 56);
+
+}
+
+body{
+    font-family: 'Calistoga', cursive;
+    background-color: var(--color-dark3);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+.content-add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+ 
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+    padding: 1rem;
+    box-shadow: 1px 1px 1px 2px #04040486;
+  
+}
+
+#input-new-task {
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-new-task{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-new-task:hover{
+    background-color: var(--color-dark3);
+    
+}
+
+.titulo{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    padding: 0;
+    margin-left: 15px;
+   
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#to-do-list li:hover{
+background-color: var(--color-dark2);
+transition: .4s;
+border-radius: 1rem;
+padding-left: 1rem;
+}
+
+#btn-ok {
+    background: var(--color-green);
+    border-radius: 50%;
+    border: none;
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+    
+#btn-ok:hover{
+    background-color: var(--color-green2);
+}
+
